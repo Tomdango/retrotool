@@ -9,6 +9,7 @@
     "@types/uuid": "8.3.4"
   },
   "scripts": {
+    "preinstall": "yarn config set ignore-engines true",
     "test": "sst test",
     "start": "sst start --stage dev",
     "build": "sst build",
