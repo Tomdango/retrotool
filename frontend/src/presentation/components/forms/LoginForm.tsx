@@ -4,7 +4,7 @@ import React, {
   EventHandler,
   FormEventHandler,
   SyntheticEvent,
-  useState,
+  useState
 } from "react";
 import Logo from "../Logo";
 
@@ -127,7 +127,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSubmit, onRegisterClick }) => {
 
             <div className="text-sm">
               <a
-                href="#"
+                href="/forgot-password"
                 className="font-medium text-indigo-600 hover:text-indigo-500"
               >
                 Forgot your password?

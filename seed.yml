@@ -1,3 +1,2 @@
-before_build:
-  - export CI=false # TODO: Fix the damn eslint warnings!
-  - export NODE_ENV=production
+before_compile:
+  - yarn config set ignore-engines true
