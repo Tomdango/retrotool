@@ -26,13 +26,13 @@ const WebsocketContext = createContext<IWebsocketContext>({
   sendMessage: () => {},
 });
 
-const ValidResponses: Record<
-  OutboundMessage.Any["action"],
-  Array<InboundMessage.Any["action"]>
-> = {
-  SetupRetro: ["SUCCESS:CREATED_RETRO"],
-  SyncRetroData: ["SUCCESS::SYNC_RETRO_DATA"],
-};
+// const ValidResponses: Record<
+//   OutboundMessage.Any["action"],
+//   Array<InboundMessage.Any["action"]>
+// > = {
+//   SetupRetro: ["SUCCESS:CREATED_RETRO"],
+//   SyncRetroData: ["SUCCESS::SYNC_RETRO_DATA"],
+// };
 
 export const WebsocketProvider: React.FC = ({ children }) => {
   const [websocketUrl, setWebsocketUrl] = useState<string | null>(null);
@@ -48,7 +48,7 @@ export const WebsocketProvider: React.FC = ({ children }) => {
         return;
       }
 
-      let isComplete = false;
+      //   let isComplete = false;
 
       const messageTimeout = setTimeout(() => {
         console.log("Message Timed Out");

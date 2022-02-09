@@ -8,12 +8,6 @@ import { InboundMessage, OutboundMessage } from "../types/WebsocketTypes";
 
 const { WEBSOCKET_URL } = config.apiGateway;
 
-type IRetro = {
-  id: string;
-  name: string;
-  type: string;
-};
-
 const useSetupRetroWebsocket = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);

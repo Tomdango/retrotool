@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
 import useRetroClient from "../../../core/hooks/UseRetroClient";
 import Card from "../../components/Card";
 import AppWrapper from "../../wrappers/AppWrapper";
@@ -7,8 +6,8 @@ import AppWrapper from "../../wrappers/AppWrapper";
 const useRetroView = () => {
   const { status } = useRetroClient();
 
-  const [retro, setRetro] = useState<any>();
-  const { retroID } = useParams<{ retroID: string }>();
+  const [retro] = useState<any>();
+  //   const { retroID } = useParams<{ retroID: string }>();
 
   //   const loadRetroData = () => {
   //     ws.sendJsonMessage({ action: "SyncRetroData", retroID });

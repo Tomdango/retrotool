@@ -1,7 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon, LogoutIcon } from "@heroicons/react/solid";
 import clsx from "clsx";
-import React, { HTMLProps, useState } from "react";
+import React, { HTMLProps } from "react";
 import { useAuthContext } from "../../core/context/AuthContext";
 import Logo from "./Logo";
 
@@ -91,7 +91,7 @@ const ProfileDropdown: React.FC = () => {
 };
 
 const Header = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  // const [isExpanded, setIsExpanded] = useState(false);
   const { isAuthenticated } = useAuthContext();
 
   return (

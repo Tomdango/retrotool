@@ -4,11 +4,10 @@ import { ReadyState } from "react-use-websocket";
 import config from "../../config";
 import { AWSAuth } from "../auth/AWSAuth";
 import { useWebsocketContext } from "../context/WebsocketContext";
-import { InboundMessage } from "../types/WebsocketTypes";
 
 const { WEBSOCKET_URL } = config.apiGateway;
 
-const waitForMessage = (action: InboundMessage.Any["action"]) => {};
+// const waitForMessage = (action: InboundMessage.Any["action"]) => {};
 
 const useRetroClient = () => {
   const { retroID } = useParams<{ retroID: string }>();

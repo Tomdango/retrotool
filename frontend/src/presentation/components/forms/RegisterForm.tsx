@@ -23,7 +23,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
   const [passwordRepeat, setPasswordRepeat] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const [error, setError] = useState<string>();
+  const [error] = useState<string>();
 
   const handleSubmit: FormEventHandler = async (event) => {
     event.preventDefault();
