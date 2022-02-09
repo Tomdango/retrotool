@@ -14,6 +14,11 @@ class FrontendStack extends sst.Stack {
 
     const site = new sst.ReactStaticSite(this, "frontend", {
       path: "frontend",
+      customDomain:
+        scope.stage !== "dev"
+          ? { domainName: `${scope.stage}.remtro.com` }
+          : undefined,
+
       environment: {
         REACT_APP_API_URL: api.url,
         REACT_APP_WEBSOCKET_API_URL: websocketApi.url,
