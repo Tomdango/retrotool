@@ -6,8 +6,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "rootDir": "../",
-    "baseUrl": "frontend/src",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
