@@ -15,7 +15,7 @@ class FrontendStack extends sst.Stack {
     const site = new sst.ReactStaticSite(this, "frontend", {
       path: "frontend",
       environment: {
-        CI: "false",
+        CI: "false", // TODO: Fix the damn eslint warnings!
         REACT_APP_API_URL: api.url,
         REACT_APP_WEBSOCKET_API_URL: websocketApi.url,
         REACT_APP_REGION: scope.region,
