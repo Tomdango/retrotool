@@ -1,0 +1,13 @@
+{
+  "name": "retrotool-api",
+  "version": "1.0.0",
+  "description": "The API for Retrotool",
+  "main": "index.js",
+  "author": "Thomas Judd-Cooper <me@tomjuddcooper.co.uk>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "cross-env": "7.0.3",
+    "retrotool-libs": "1.0.0"
+  }
+}
