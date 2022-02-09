@@ -18,7 +18,6 @@ const HeaderLink: React.FC<HeaderLinkProps> = ({
   className,
   ...rest
 }) => (
-  // eslint-disable-next-line jsx-a11y/anchor-has-content
   <a
     className={clsx(
       "px-3 py-2 text-sm font-medium rounded-md",
